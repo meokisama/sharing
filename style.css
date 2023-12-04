@@ -64,6 +64,10 @@ body {
     }
 }
 
+.img-holder {
+    overflow: hidden;
+  }
+
 
 img {
     width: 100%;
@@ -75,7 +79,7 @@ img {
 img:hover {
     position: relative;
     transition: all 0.3s ease-out;
-    transform: scale(1.03);
+    transform: scale(1.08) rotate(3deg);
 }
 
 .pad {
@@ -96,7 +100,7 @@ img:hover {
 }
 
 .item:hover {
-    transform: translate3d(0px, -0.25rem, 0px);
+    transform: translate3d(0px, -0.5rem, 0px);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     cursor: pointer;
-  }
+}
