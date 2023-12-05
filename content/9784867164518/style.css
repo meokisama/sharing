@@ -1,18 +1,6 @@
 @import url(../custom.css);
-.align-end {
-    display: block;
-    height: auto;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    text-align: right;
-    text-indent: inherit;
-    width: auto
+.bold {
+    font-weight: bold
     }
 .calibre {
     display: block;
@@ -41,6 +29,18 @@
     width: auto
     }
 .calibre3 {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0
+    }
+.calibre4 {
     display: block;
     font-size: 2em;
     line-height: 1.2;
@@ -53,7 +53,7 @@
     padding-right: 0;
     padding-top: 0
     }
-.calibre4 {
+.calibre5 {
     height: auto;
     margin-bottom: 0;
     margin-left: 0;
@@ -65,7 +65,7 @@
     padding-top: 0;
     width: auto
     }
-.calibre5 {
+.calibre6 {
     display: block;
     height: auto;
     margin-bottom: 0;
@@ -79,29 +79,7 @@
     text-indent: inherit;
     width: auto
     }
-.calibre6 {
-    background: transparent;
-    color: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-    text-decoration: overline
-    }
 .calibre7 {
-    background: transparent;
-    display: block;
-    font-family: serif-ja-v, serif-ja, serif;
-    font-size: 1em;
-    font-weight: inherit;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0
-    }
-.calibre8 {
     display: block;
     font-size: 2em;
     font-weight: bold;
@@ -111,7 +89,7 @@
     margin-right: 0;
     margin-top: 0.67em
     }
-.calibre9 {
+.calibre8 {
     display: block;
     list-style-type: decimal;
     margin-bottom: 1em;
@@ -119,8 +97,24 @@
     margin-right: 0;
     margin-top: 1em
     }
-.calibre10 {
+.calibre9 {
     display: list-item
+    }
+.centerblock {
+    -webkit-writing-mode: vertical-rl;
+    display: block;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-indent: 0;
+    width: auto;
+    writing-mode: vertical-rl
     }
 .fit {
     background: transparent;
@@ -147,55 +141,15 @@
     padding-right: 0;
     padding-top: 0;
     page-break-inside: avoid;
-    vertical-align: top;
+    vertical-align: baseline;
     width: auto
     }
-.font-1em {
-    font-size: 1.125em
-    }
-.font-1em1 {
-    background: transparent;
-    display: block;
+.font-120per {
     font-family: sans-serif-ja, sans-serif;
     font-size: 1.125em;
-    font-weight: inherit;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0
-    }
-.font-1em2 {
-    background: transparent;
-    display: block;
-    font-family: serif-ja-v, serif-ja, serif;
-    font-size: 1.125em;
-    font-weight: inherit;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0
+    font-weight: bold
     }
 .hltr {
-    font-size: 2em;
-    line-height: 1.2;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0
-    }
-.hltr1 {
     -webkit-writing-mode: horizontal-tb;
     font-family: serif-ja, serif
     }
@@ -216,72 +170,29 @@
     text-indent: 0;
     width: auto
     }
-.main2 {
-    display: block;
-    height: auto;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    text-align: center;
-    text-indent: 0;
-    width: auto
-    }
-.main3 {
-    display: block;
-    font-family: sans-serif-ja, sans-serif;
-    height: auto;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    text-indent: 0;
-    width: auto
-    }
-.p-image {
-    -epub-hyphens: auto;
-    -epub-line-break: normal;
-    -epub-text-underline-position: under left;
-    -epub-word-break: normal;
-    -webkit-hyphens: auto;
-    -webkit-line-break: normal;
-    -webkit-text-underline-position: under left;
-    -webkit-word-break: normal;
+.naka-midashi {
     background: transparent;
     display: block;
-    font-size: 1em;
-    letter-spacing: normal;
-    line-height: 1.75;
+    font-family: sans-serif-ja-v, sans-serif;
+    font-size: 1.41667em;
+    font-weight: inherit;
     margin-bottom: 0;
-    margin-left: 5pt;
-    margin-right: 5pt;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
-    text-align: center;
-    text-indent: 0;
-    vertical-align: baseline;
-    white-space: normal;
-    word-spacing: normal;
-    word-wrap: break-word
+    padding-top: 0
     }
-.p-toc {
+.p-caution {
     -epub-hyphens: auto;
     -epub-line-break: normal;
-    -epub-text-underline-position: under left;
+    -epub-text-align-last: left;
     -epub-word-break: normal;
     -webkit-hyphens: auto;
     -webkit-line-break: normal;
+    -webkit-text-align-last: left;
     -webkit-text-underline-position: under left;
     -webkit-word-break: normal;
     background: transparent;
@@ -304,57 +215,26 @@
     word-spacing: normal;
     word-wrap: break-word
     }
-.start-3em {
+.start-1em {
     display: block;
     height: auto;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 3em;
+    margin-top: 1em;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    text-indent: inherit;
-    width: auto
-    }
-.start-5em {
-    display: block;
-    height: auto;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 5em;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    text-indent: inherit;
+    text-indent: 0;
     width: auto
     }
 .tcy {
-    -webkit-text-combine: horizontal;
-    -webkit-text-combine-upright: all;
-    text-combine-upright: all
+    -webkit-text-combine: horizontal
     }
 .vrtl {
     -webkit-writing-mode: vertical-rl;
     font-family: serif-ja, serif
-    }
-.pcalibre:link {
-    color: #00f
-    }
-.pcalibre1:visited {
-    color: #00f
-    }
-.pcalibre3:focus {
-    color: #00f
-    }
-.pcalibre2:hover {
-    color: #00f
-    }
-.pcalibre4:active {
-    color: #00f
     }
 
 @page {

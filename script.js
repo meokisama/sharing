@@ -21,3 +21,18 @@ document.getElementById("9784046826398").addEventListener("click", function () {
 document.getElementById("9784041140628").addEventListener("click", function () {
     window.open("content/9784041140628/index.html", '_blank');
 });
+
+
+document.getElementById("9784049150148").addEventListener("click", function () {
+    window.open("content/9784049150148/index.html", '_blank');
+});
+
+
+document.getElementById("9784046827746").addEventListener("click", function () {
+    window.open("content/9784046827746/index.html", '_blank');
+});
+
+
+document.getElementById("9784867164518").addEventListener("click", function () {
+    window.open("content/9784867164518/index.html", '_blank');
+});
