@@ -1,0 +1,317 @@
+@import url(../custom.css);
+
+.align-center {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+    text-indent: 0;
+    width: auto
+    }
+.align-right {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: right;
+    text-indent: 0;
+    width: auto
+    }
+.bold {
+    font-weight: bold
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0
+    }
+.calibre1 {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center
+    }
+.calibre2 {
+    height: auto;
+    width: auto
+    }
+.calibre3 {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-indent: inherit;
+    width: auto
+    }
+.calibre4 {
+    display: block
+    }
+.calibre5 {
+    background: transparent;
+    color: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: inherit
+    }
+.calibre6 {
+    background: transparent;
+    display: block;
+    font-family: serif-ja-v, serif-ja, serif;
+    font-size: 1em;
+    font-weight: inherit;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0
+    }
+.calibre7 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.67em
+    }
+.calibre8 {
+    display: block;
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre9 {
+    display: list-item
+    }
+.em-sesame {
+    -webkit-text-emphasis-style: filled sesame
+    }
+.fit {
+    background: transparent;
+    border-bottom-color: currentColor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-left-color: currentColor;
+    border-left-style: none;
+    border-left-width: medium;
+    border-right-color: currentColor;
+    border-right-style: none;
+    border-right-width: medium;
+    border-top-color: currentColor;
+    border-top-style: none;
+    border-top-width: medium;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    page-break-inside: avoid;
+    text-align: inherit;
+    vertical-align: top;
+    white-space: normal;
+    width: auto
+    }
+.font-080per {
+    font-size: 0.75em
+    }
+.font-120per {
+    font-size: 1.125em
+    }
+.gfont {
+    font-family: sans-serif-ja, sans-serif
+    }
+.h-indent-4em {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4em;
+    text-indent: -4em;
+    width: auto
+    }
+.hltr {
+    -webkit-writing-mode: horizontal-tb;
+    font-family: serif-ja, serif
+    }
+.k-solid {
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #000;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #000;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #000;
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    text-indent: 0;
+    width: auto
+    }
+.main {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-indent: 0;
+    width: auto
+    }
+.p-image {
+    -epub-hyphens: auto;
+    -epub-line-break: normal;
+    -epub-text-underline-position: under left;
+    -epub-word-break: normal;
+    -webkit-hyphens: auto;
+    -webkit-line-break: normal;
+    -webkit-text-underline-position: under left;
+    -webkit-word-break: normal;
+    background: transparent;
+    display: block;
+    font-size: 1em;
+    letter-spacing: normal;
+    line-height: 1.75;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+    text-indent: 0;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: normal;
+    word-wrap: break-word
+    }
+.p-text {
+    -epub-hyphens: auto;
+    -epub-line-break: normal;
+    -epub-text-underline-position: under left;
+    -epub-word-break: normal;
+    -webkit-hyphens: auto;
+    -webkit-line-break: normal;
+    -webkit-text-underline-position: under left;
+    -webkit-word-break: normal;
+    background: transparent;
+    display: block;
+    font-size: 1em;
+    letter-spacing: normal;
+    line-height: 1.75;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: justify;
+    text-indent: 0;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: normal;
+    word-wrap: break-word
+    }
+.sideways {
+    -epub-text-orientation: sideways;
+    -webkit-text-orientation: sideways
+    }
+.tcy {
+    -webkit-text-combine: horizontal;
+    -webkit-text-combine-upright: all;
+    text-combine-upright: all
+    }
+.upright {
+    -epub-text-orientation: upright;
+    -webkit-text-orientation: upright
+    }
+.vrtl {
+    -webkit-writing-mode: vertical-rl;
+    font-family: serif-ja, serif
+    }
+.pcalibre:link {
+    color: #00f
+    }
+.pcalibre1:visited {
+    color: #00f
+    }
+.pcalibre3:focus {
+    color: #00f
+    }
+.pcalibre2:hover {
+    color: #00f
+    }
+.pcalibre4:active {
+    color: #00f
+    }
+
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+
