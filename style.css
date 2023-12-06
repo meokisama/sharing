@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: #1c1c1c !important;
+  background-color: #1c1c1c !important;
+}
+
+.container {
     margin: 5rem 25rem;
     padding: 5rem;
 }
+
 
 .item p{
     font-family: 'Yu Mincho';
@@ -29,7 +35,11 @@ body {
 
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px){
-  
+    .item p {
+        font-size: 0.7rem;
+        padding: 0.6rem 0.7rem 0 0.7rem;
+        height: 3.6rem;
+    }
 }
 /*Ipad dọc(768 x 1024)*/
 @media screen and (max-width: 768px){
@@ -69,14 +79,14 @@ body {
   }
 
 
-img {
+.item img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-img:hover {
+.item img:hover {
     position: relative;
     transition: all 0.3s ease-out;
     transform: scale(1.08) rotate(3deg);
@@ -106,7 +116,6 @@ img:hover {
 }
 
 /* Scrollbar */
-/* width */
 ::-webkit-scrollbar {
     width: 7px;
   }
@@ -127,3 +136,36 @@ img:hover {
   ::-webkit-scrollbar-thumb:hover {
     background: #6d83f2; 
   }
+
+  .headimg img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+blockquote {
+  text-align: center;
+  color: rgba(250, 200, 130, 0.6);
+  margin-top: 5rem !important;
+  margin-bottom: -5rem !important;
+}
+
+blockquote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+}
+
+blockquote p::before {
+  content: open-quote;
+}
+
+blockquote p::after {
+  content: close-quote;
+
+}
+
+blockquote cite {
+  font-family: 'Poppins';
+  font-size: 1.1rem;
+}
