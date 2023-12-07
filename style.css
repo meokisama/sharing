@@ -32,6 +32,25 @@ body {
   border-bottom: none;
 }
 
+@media screen and (max-width: 1550px) {
+  .section {
+    padding-left: 12rem !important;
+    padding-right: 12rem !important;
+  }
+
+  .circle_lists {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+  }
+
+  .circle_lists .c_list {
+    width: 75% !important;
+  }
+
+  .circle_lists .c_list .lavel_name {
+    font-size: 0.8rem !important;
+  }
+}
+
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px) {
   .item p {
@@ -47,6 +66,23 @@ body {
 
   blockquote {
     padding: 0 1.4rem;
+  }
+
+  .section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .circle_lists {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
+  }
+
+  .circle_lists .c_list {
+    width: 75% !important;
+  }
+
+  .circle_lists .c_list .lavel_name {
+    font-size: 0.8rem !important;
   }
 }
 /*Ipad dọc(768 x 1024)*/
@@ -73,6 +109,23 @@ body {
   blockquote cite {
     font-size: 0.9rem !important;
   }
+
+  .section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .circle_lists {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+  }
+
+  .circle_lists .c_list {
+    width: 75% !important;
+  }
+
+  .circle_lists .c_list .lavel_name {
+    font-size: 0.8rem !important;
+  }
 }
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (max-width: 480px) {
@@ -97,6 +150,23 @@ body {
 
   blockquote cite {
     font-size: 0.9rem !important;
+  }
+
+  .section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .circle_lists {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
+  }
+
+  .circle_lists .c_list {
+    width: 75% !important;
+  }
+
+  .circle_lists .c_list .lavel_name {
+    font-size: 0.7rem !important;
   }
 }
 /*Iphone(480 x 640)*/
@@ -123,6 +193,23 @@ body {
   blockquote cite {
     font-size: 0.9rem !important;
   }
+
+  .section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .circle_lists {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
+  }
+
+  .circle_lists .c_list {
+    width: 75% !important;
+  }
+
+  .circle_lists .c_list .lavel_name {
+    font-size: 0.7rem !important;
+  }
 }
 /*Smart phone nhỏ*/
 @media screen and (max-width: 240px) {
@@ -148,6 +235,23 @@ body {
   blockquote cite {
     font-size: 0.9rem !important;
   }
+
+  .section {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .circle_lists {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
+  }
+
+  .circle_lists .c_list {
+    width: 75% !important;
+  }
+
+  .circle_lists .c_list .lavel_name {
+    font-size: 0.7rem !important;
+  }
 }
 
 .img-holder {
@@ -164,7 +268,7 @@ body {
 .item img:hover {
   position: relative;
   transition: all 0.3s ease-out;
-  transform: scale(1.08) rotate(3deg);
+  transform: scale(1.08);
 }
 
 .pad {
@@ -240,4 +344,280 @@ blockquote p::after {
 blockquote cite {
   font-family: "Poppins";
   font-size: 1.1rem;
+}
+
+/* - Circle Lists
+------------------------------------------------------- */
+.section {
+  /* max-width: 100%; */
+  padding: 15rem 25rem 5rem 25rem;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  transition: all 0.3s ease-out;
+  transform: translateZ(0);
+  overflow: hidden;
+}
+
+li:hover {
+  transform: translate3d(0px, -0.5rem, 0px);
+  /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+  border-radius: 15px; */
+}
+
+.circle_lists {
+  padding: 0 5.333%;
+  margin-bottom: 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  max-width: 100%;
+  margin: auto;
+  justify-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  .circle_lists {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.circle_lists .c_list {
+  width: 80%;
+  text-align: center;
+  margin: 0 2.6% 8%;
+  position: relative;
+}
+
+.circle_lists .c_list a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.circle_lists .c_list .logo_wrap {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: block;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_1 {
+  /* 富士見ファンタジア文庫 */
+  width: 65%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_2 {
+  /* 電撃文庫 */
+  width: 55%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_3 {
+  /* MF文庫J */
+  width: 50%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_4 {
+  /* ファミ通文庫 */
+  width: 66%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_5 {
+  /* 角川スニーカー文庫 */
+  width: 42%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_6 {
+  /* NOVEL 0 */
+  width: 60%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_7 {
+  /* 講談社ラノベ文庫 */
+  width: 70%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_9 {
+  /* ガガガ文庫 */
+  width: 75%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_10 {
+  /* オーバーラップ文庫 */
+  width: 77%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_11 {
+  /* ＧＡ文庫 */
+  width: 70%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_14 {
+  /* モンスター文庫 */
+  width: 60%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_15 {
+  /* ＨＪ文庫 */
+  width: 63%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_18 {
+  /* ドラゴンノベルス */
+  width: 62%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_19 {
+  /* カドカワBOOKS */
+  width: 75%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_20 {
+  /* MFブックス */
+  width: 80%;
+  left: 52%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_21 {
+  /* 電撃の新文芸 */
+  width: 74%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_22 {
+  /* KADOKAWAの新文芸 */
+  width: 60%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_23 {
+  /* ビーズログ文庫 */
+  width: 60%;
+  left: 52%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_24 {
+  /* ビーズログ文庫アリス */
+  width: 46%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_25 {
+  /* 角川ビーンズ文庫 */
+  width: 70%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_26 {
+  /* HJノベルス */
+  width: 65%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_28 {
+  /* Mノベルス */
+  width: 60%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_29 {
+  /* Mノベルスf */
+  width: 75%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_30 {
+  /* Ｋラノベブックス */
+  width: 56%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_31 {
+  /* Ｋラノベブックスｆ */
+  width: 60%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_32 {
+  /* オーバーラップノベルス */
+  width: 60%;
+  left: 56%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_33 {
+  /* オーバーラップノベルスf */
+  width: 60%;
+  left: 54%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_34 {
+  /* ダッシュエックス文庫 */
+  width: 52%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_35 {
+  /* TOブックス */
+  width: 80%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_36 {
+  /* GAノベル */
+  width: 56%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_37 {
+  /* DREノベルス */
+  width: 56%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_38 {
+  /* サーガフォレスト */
+  width: 65%;
+  left: 52%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_16 {
+  /* ブレイブ文庫 */
+  width: 53%;
+  right: 52%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_39 {
+  /* アース・スターノベル */
+  width: 60%;
+  left: 51%;
+}
+
+.circle_lists .c_list .logo_wrap .lavel_logo.lg_40 {
+  /* アース・スタールナ */
+  width: 60%;
+  left: 53%;
+}
+
+.circle_lists .c_list .lavel_name {
+  font-family: 'Yu Mincho';
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-top: 4%;
+  color: aliceblue;
+}
+
+[class*='lg_'] .lazy {
+  width: 100%;
+  height: auto;
 }
