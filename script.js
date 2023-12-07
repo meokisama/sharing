@@ -50,3 +50,11 @@ document.getElementById("9784094531602").addEventListener("click", function () {
 document.getElementById("9784575753271").addEventListener("click", function () {
     window.open("content/9784575753271/", '_blank');
 });
+
+document.getElementById("9784086315289").addEventListener("click", function () {
+    window.open("content/9784086315289/", '_blank');
+});
+
+document.getElementById("9784798633589").addEventListener("click", function () {
+    window.open("content/9784798633589/", '_blank');
+});
