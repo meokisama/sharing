@@ -1,3 +1,12 @@
+window.onload = function(){
+    var allLinks = document.querySelectorAll("li.c_list a");
+    for(var i = 0; i < allLinks.length; i++){
+        var currentLink = allLinks[i];
+        currentLink.setAttribute("target", "_blank");
+    }
+}
+
+
 document.getElementById("9784798633336").addEventListener("click", function () {
     window.open("content/9784798633336/", '_blank');
 });

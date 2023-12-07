@@ -169,6 +169,14 @@ body {
   .circle_lists .c_list .lavel_name {
     font-size: 0.7rem !important;
   }
+
+  .head-title h1 {
+    font-size: 1.9rem !important;
+  }
+
+  .head-title p {
+    font-size: 0.85rem !important;
+  }
 }
 /*Iphone(480 x 640)*/
 @media screen and (max-width: 320px) {
@@ -211,7 +219,16 @@ body {
   .circle_lists .c_list .lavel_name {
     font-size: 0.7rem !important;
   }
+
+  .head-title h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .head-title p {
+    font-size: 0.7em !important;
+  }
 }
+
 /*Smart phone nhỏ*/
 @media screen and (max-width: 240px) {
   .item p {
@@ -252,6 +269,14 @@ body {
 
   .circle_lists .c_list .lavel_name {
     font-size: 0.7rem !important;
+  }
+
+  .head-title h1 {
+    font-size: 1rem !important;
+  }
+
+  .head-title p {
+    font-size: 0.5em !important;
   }
 }
 
@@ -357,15 +382,15 @@ blockquote cite {
 .head-title {
   text-align: center;
   color: rgba(250, 200, 130, 0.6);
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 3rem;
 }
 
 .head-title h1 {
   font-family: 'Lexend', sans-serif;
-  font-size: 3rem !important;
-  font-weight: 900 !important;
+  font-size: 3rem;
+  font-weight: 900;
   border-bottom: 1px solid rgba(250, 200, 130, 0.6);
   line-height: 0.1em;
 }
