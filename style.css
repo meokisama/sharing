@@ -18,7 +18,7 @@ body {
   border-radius: 20px;
   text-align: center;
   border-bottom: 7px solid #6d83f2 !important;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-out;
   transform: translateZ(0);
   overflow: hidden;
@@ -427,6 +427,7 @@ li:hover {
   justify-items: center;
   background-color: #2c2c2c;
   border-radius: 3rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (min-width: 960px) {
@@ -674,7 +675,7 @@ li:hover {
   height: auto;
 }
 
-li:hover .lg_5:hover {
+/* li div.logo_wrap:hover {
   animation-name: spin;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -688,4 +689,6 @@ li:hover .lg_5:hover {
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+

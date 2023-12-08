@@ -1,3 +1,4 @@
+// Open in new tab for all labels
 window.onload = function(){
     var allLinks = document.querySelectorAll("li.c_list a");
     for(var i = 0; i < allLinks.length; i++){
@@ -6,7 +7,7 @@ window.onload = function(){
     }
 }
 
-
+// URL settings for each item
 document.getElementById("9784798633336").addEventListener("click", function () {
     window.open("content/9784798633336/", '_blank');
 });
