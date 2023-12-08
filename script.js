@@ -68,3 +68,19 @@ document.getElementById("9784086315289").addEventListener("click", function () {
 document.getElementById("9784798633589").addEventListener("click", function () {
     window.open("content/9784798633589/", '_blank');
 });
+
+document.getElementById("9784086315258").addEventListener("click", function () {
+    window.open("content/9784086315258/", '_blank');
+});
+
+document.getElementById("9784049147490").addEventListener("click", function () {
+    window.open("content/9784049147490/", '_blank');
+});
+
+document.getElementById("9784824005007").addEventListener("click", function () {
+    window.open("content/9784824005007/", '_blank');
+});
+
+document.getElementById("9784049151299").addEventListener("click", function () {
+    window.open("content/9784049151299/", '_blank');
+});
