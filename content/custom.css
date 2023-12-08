@@ -104,3 +104,8 @@ svg {
 ::-webkit-scrollbar-thumb:hover {
   background: #6d83f2;
 }
+
+/* Fix issue for Dash X Bunko */
+.main {
+  height: auto !important;
+}
