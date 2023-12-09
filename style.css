@@ -60,7 +60,7 @@ body {
   font-size: 0.7rem;
   font-weight: bold;
   background-color: #6d83f2;
-  padding: 5px;
+  padding: 5px 5px 10px 5px;
   border-radius: 7px 7px 0 0;
   border-bottom: none;
 }
@@ -165,7 +165,16 @@ body {
   .item p {
     font-size: 0.7rem;
     padding: 0.6rem 0.5rem 0 0.5rem;
-    height: 3.7rem;
+    height: 2.5rem;
+    /* truncate text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .item span {
+    font-size: 0.5rem;
   }
 
   .edge {
@@ -213,9 +222,18 @@ body {
 /*Iphone(480 x 640)*/
 @media screen and (max-width: 320px) {
   .item p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 0.6rem 0.5rem 0 0.5rem;
-    height: 3.7rem;
+    height: 2.5rem;
+    /* truncate text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .item span {
+    font-size: 0.4rem;
   }
 
   .edge {
@@ -264,9 +282,18 @@ body {
 /*Smart phone nhỏ*/
 @media screen and (max-width: 240px) {
   .item p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 0.6rem 0.5rem 0 0.5rem;
-    height: 3.7rem;
+    height: 2.5rem;
+    /* truncate text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .item span {
+    font-size: 0.4rem;
   }
 
   .edge {
