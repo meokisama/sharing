@@ -747,6 +747,11 @@ li:hover div.logo_wrap {
   transform: translateZ(0);
 }
 
+/* Change padding of parent node if child node is hidden */
+.pad:has(div.hidden) {
+  padding: 0;
+}
+
 .paging button:hover {
   transform: translate3d(0px, -0.4rem, 0px);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
