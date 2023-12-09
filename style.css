@@ -702,7 +702,7 @@ li:hover {
   height: auto;
 }
 
-/* li div.logo_wrap:hover {
+li:hover div.logo_wrap {
   animation-name: spin;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -716,6 +716,6 @@ li:hover {
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 
