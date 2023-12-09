@@ -85,6 +85,18 @@ document.getElementById("9784049151299").addEventListener("click", function () {
     window.open("content/9784049151299/", '_blank');
 });
 
+document.getElementById("9784815618759").addEventListener("click", function () {
+    window.open("content/9784815618759/", '_blank');
+});
+
+document.getElementById("9784094531442").addEventListener("click", function () {
+    window.open("content/9784094531442/", '_blank');
+});
+
+document.getElementById("9784040746098").addEventListener("click", function () {
+    window.open("content/9784040746098/", '_blank');
+});
+
 
 //Pagination
 document.addEventListener('DOMContentLoaded', function () {
@@ -96,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const startIndex = page * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         items.forEach((item, index) => {
-            item.classList.toggle('hidden', index < startIndex || index >= endIndex);
+            item.parentElement.classList.toggle('d-none', index < startIndex || index >= endIndex);
         });
         updateActiveButtonStates();
     }

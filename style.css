@@ -722,9 +722,16 @@ li:hover div.logo_wrap {
 }
 
 /* Pagination */
-.hidden {
-  display: none;
-}
+
+/*
+
+Change padding of parent node if child node is hidden using .hidden class.
+(In Boostrap 5, we can use 'd-none' instead of these two class.)
+
+.hidden {display: none;}
+.pad:has(div.hidden) {padding: 0;}
+
+*/
 
 .paging {
   margin-top: -4rem;
@@ -745,11 +752,6 @@ li:hover div.logo_wrap {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-out;
   transform: translateZ(0);
-}
-
-/* Change padding of parent node if child node is hidden */
-.pad:has(div.hidden) {
-  padding: 0;
 }
 
 .paging button:hover {
