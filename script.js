@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentPage = i;
                 showPage(currentPage);
                 updateActiveButtonStates();
+                document.querySelector('.container .head-title').scrollIntoView({behavior: "smooth"});
             });
 
             document.getElementById('bodyContent').appendChild(paginationContainer);

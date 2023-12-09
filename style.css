@@ -412,6 +412,8 @@ blockquote cite {
   width: 80%;
   margin: 0 auto;
   padding-bottom: 3rem;
+  /* Fix scroll position when do a pagination */
+  scroll-margin-top: 5rem;
 }
 
 .head-title h1 {
