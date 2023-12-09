@@ -1,7 +1,7 @@
 // Open in new tab for all labels
-window.onload = function(){
+window.onload = function () {
     var allLinks = document.querySelectorAll("li.c_list a");
-    for(var i = 0; i < allLinks.length; i++){
+    for (var i = 0; i < allLinks.length; i++) {
         var currentLink = allLinks[i];
         currentLink.setAttribute("target", "_blank");
     }
@@ -83,4 +83,56 @@ document.getElementById("9784824005007").addEventListener("click", function () {
 
 document.getElementById("9784049151299").addEventListener("click", function () {
     window.open("content/9784049151299/", '_blank');
+});
+
+
+//Pagination
+document.addEventListener('DOMContentLoaded', function () {
+    const itemsPerPage = 16;
+    let currentPage = 0;
+    const items = Array.from(document.getElementsByClassName('item')).slice(0);
+
+    function showPage(page) {
+        const startIndex = page * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        items.forEach((item, index) => {
+            item.classList.toggle('hidden', index < startIndex || index >= endIndex);
+        });
+        updateActiveButtonStates();
+    }
+
+    function createPageButtons() {
+        const totalPages = Math.ceil(items.length / itemsPerPage);
+        const paginationContainer = document.createElement('div');
+        const paginationDiv = document.body.appendChild(paginationContainer);
+        paginationContainer.classList.add('paging');
+
+        // Add page buttons
+        for (let i = 0; i < totalPages; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.textContent = i + 1;
+            pageButton.addEventListener('click', () => {
+                currentPage = i;
+                showPage(currentPage);
+                updateActiveButtonStates();
+            });
+
+            document.getElementById('bodyContent').appendChild(paginationContainer);
+            paginationDiv.appendChild(pageButton);
+        }
+    }
+
+    function updateActiveButtonStates() {
+        const pageButtons = document.querySelectorAll('.paging button');
+        pageButtons.forEach((button, index) => {
+            if (index === currentPage) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+
+    createPageButtons(); // Call this function to create the page buttons initially
+    showPage(currentPage);
 });

@@ -5,6 +5,7 @@
 
 body {
   background-color: #1c1c1c !important;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -718,3 +719,38 @@ li:hover div.logo_wrap {
   height: auto;
 }
 
+/* Pagination */
+.hidden {
+  display: none;
+}
+
+.paging {
+  margin-top: -4rem;
+  padding-bottom: 10rem;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.paging button {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  font-family: 'Lexend';
+  font-size: 1rem;
+  background-color: #3f4156;
+  color: rgb(199, 203, 207);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-out;
+  transform: translateZ(0);
+}
+
+.paging button:hover {
+  transform: translate3d(0px, -0.4rem, 0px);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
+
+.paging button.active {
+  background-color: #6d83f2;
+  color: #3f4156;
+}
