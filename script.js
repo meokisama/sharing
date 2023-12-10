@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentPage = i;
                 showPage(currentPage);
                 updateActiveButtonStates();
-                document.querySelector('.container .head-title').scrollIntoView({behavior: "smooth"});
+                document.querySelector('.container .head-title').scrollIntoView({ behavior: "smooth" });
             });
 
             document.getElementById('bodyContent').appendChild(paginationContainer);
@@ -176,4 +176,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     createPageButtons(); // Call this function to create the page buttons initially
     showPage(currentPage);
+});
+
+// Set height for #spaceHolder in order to implement parallax
+document.getElementById('spaceHolder').style.height = document.querySelector('.headimg img').offsetHeight + 'px';
+window.addEventListener('resize', () => {
+    document.getElementById('spaceHolder').style.height = document.querySelector('.headimg img').offsetHeight + 'px';
 });

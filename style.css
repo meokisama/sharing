@@ -348,7 +348,7 @@ body {
   padding-top: 2rem;
 }
 
-/* Scrollbar */
+/* Start scrollbar-------------------------------------- */
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -369,10 +369,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6d83f2;
 }
+/* End scrollbar------------------------------------------ */
 
 .headimg img {
   width: 100%;
   height: auto;
+  position: fixed;
+  z-index: -1;
+}
+
+#bodyContent {
+  background-color: #1c1c1c;
 }
 
 blockquote {
