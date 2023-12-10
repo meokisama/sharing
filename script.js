@@ -97,10 +97,38 @@ document.getElementById("9784040746098").addEventListener("click", function () {
     window.open("content/9784040746098/", '_blank');
 });
 
+document.getElementById("9784046821102").addEventListener("click", function () {
+    window.open("content/9784046821102/", '_blank');
+});
+
+document.getElementById("9784815614584").addEventListener("click", function () {
+    window.open("content/9784815614584/", '_blank');
+});
+
+document.getElementById("9784040749495").addEventListener("click", function () {
+    window.open("content/9784040749495/", '_blank');
+});
+
+document.getElementById("9784041130872").addEventListener("click", function () {
+    window.open("content/9784041130872/", '_blank');
+});
+
+document.getElementById("9784049151282").addEventListener("click", function () {
+    window.open("content/9784049151282/", '_blank');
+});
+
+document.getElementById("9784049148183").addEventListener("click", function () {
+    window.open("content/9784049148183/", '_blank');
+});
+
+document.getElementById("9784041138472").addEventListener("click", function () {
+    window.open("content/9784041138472/", '_blank');
+});
+
 
 //Pagination
 document.addEventListener('DOMContentLoaded', function () {
-    const itemsPerPage = 16;
+    const itemsPerPage = 24;
     let currentPage = 0;
     const items = Array.from(document.getElementsByClassName('item')).slice(0);
 
