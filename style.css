@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -109,6 +109,12 @@ body {
     padding-right: 2rem !important;
   }
 
+  .konoDescription {
+    font-size: 0.9rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
   }
@@ -152,6 +158,28 @@ body {
     padding-right: 2rem !important;
   }
 
+  .konoDescription {
+    font-size: 0.7rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .konoTitle span {
+    font-size: 0.8rem !important;
+  }
+
+  .titleJP {
+    font-size: 1rem !important;
+  }
+
+  .konoLink {
+    font-size: 0.6rem;
+  }
+
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
   }
@@ -172,7 +200,7 @@ body {
     height: 2.5rem;
     /* truncate text */
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -202,6 +230,30 @@ body {
   .konorano {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+  }
+
+  .konoDescription {
+    font-size: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .konoTitle span {
+    font-size: 0.6rem !important;
+  }
+
+  .konoLink {
+    font-size: 0.6rem;
+    padding: 4px 0 !important;
+  }
+
+  .titleJP {
+    font-size: 0.7rem !important;
+    margin-bottom: -0.1rem !important;
   }
 
   .circle_lists {
@@ -262,6 +314,30 @@ body {
   .konorano {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
+  }
+
+  .konoDescription {
+    font-size: 0.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .konoTitle span {
+    font-size: 0.34rem !important;
+  }
+
+  .konoLink {
+    font-size: 0.4rem;
+    padding: 4px 0 !important;
+  }
+
+  .titleJP {
+    font-size: 0.4rem !important;
+    margin-bottom: -0.1rem !important;
   }
 
   .circle_lists {
@@ -325,6 +401,30 @@ body {
     padding-right: 2rem !important;
   }
 
+  .konoDescription {
+    font-size: 0.5rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden;
+  }
+
+  .konoTitle span {
+    font-size: 0.3rem !important;
+  }
+
+  .konoLink {
+    font-size: 0.4rem;
+    padding: 2px 0 !important;
+  }
+
+  .titleJP {
+    font-size: 0.4rem !important;
+    margin-bottom: -0.1rem !important;
+  }
+
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
   }
@@ -347,7 +447,9 @@ body {
 }
 
 @media (min-width: 240px) and (max-width: 991px) {
-  .container, .container-md, .container-sm {
+  .container,
+  .container-md,
+  .container-sm {
     max-width: 100% !important;
   }
 }
@@ -805,29 +907,34 @@ Change padding of parent node if child node is hidden using .hidden class.
   margin-top: 1rem;
   color: antiquewhite;
   text-align: center;
-  font-family: 'Yu Mincho';
+  font-family: "Yu Mincho";
 }
 
 .konoTitle span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .titleJP {
-  font-family: 'Yu Mincho';
-  font-size: 1.3rem;
+  font-family: "Reggae One";
+  font-size: 1.5rem;
 }
 
 .konoDescription {
-  font-family: 'Yu Mincho';
-  font-size: 0.91rem;
-  margin-top: 1rem;
+  font-family: "Yu Mincho";
+  font-size: 1.1rem;
   color: antiquewhite;
   text-align: left;
-  padding-right: 1rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .konoLink {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
   border-radius: 0.3rem;
   width: 100%;
