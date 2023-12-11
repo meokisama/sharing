@@ -5,6 +5,7 @@ window.onload = function () {
         var currentLink = allLinks[i];
         currentLink.setAttribute("target", "_blank");
     }
+    coverResize();
 }
 
 // URL settings for each item
@@ -182,4 +183,13 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('spaceHolder').style.height = document.querySelector('.headimg img').offsetHeight + 'px';
 window.addEventListener('resize', () => {
     document.getElementById('spaceHolder').style.height = document.querySelector('.headimg img').offsetHeight + 'px';
+    coverResize();
 });
+
+var coverResize =  () => {
+    var sampleHeight = document.getElementById('sampleHeight').offsetHeight;
+    var coversList = document.querySelectorAll('.img-holder img:not(#sampleHeight)');
+    for (let i = 0; i < coversList.length; i++) {
+        coversList[i].style.height = sampleHeight + 'px';
+    }
+}
