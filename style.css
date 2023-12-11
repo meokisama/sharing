@@ -79,7 +79,6 @@ body {
     padding-right: 5rem !important;
   }
 
-
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
   }
@@ -183,9 +182,9 @@ body {
     font-size: 1rem !important;
   }
 
-  .konoLink {
+  /* .konoLink {
     font-size: 0.6rem;
-  }
+  } */
 
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
@@ -254,8 +253,7 @@ body {
   }
 
   .konoLink {
-    font-size: 0.6rem;
-    padding: 4px 0 !important;
+    margin-bottom: 1rem !important;
   }
 
   .titleJP {
@@ -338,8 +336,7 @@ body {
   }
 
   .konoLink {
-    font-size: 0.4rem;
-    padding: 4px 0 !important;
+    margin-bottom: 1rem !important;
   }
 
   .titleJP {
@@ -422,10 +419,10 @@ body {
     font-size: 0.3rem !important;
   }
 
-  .konoLink {
+  /* .konoLink {
     font-size: 0.4rem;
     padding: 2px 0 !important;
-  }
+  } */
 
   .titleJP {
     font-size: 0.4rem !important;
@@ -906,7 +903,6 @@ Change padding of parent node if child node is hidden using .hidden class.
 }
 
 .konoItem img {
-  border-radius: 0.5rem;
   padding-left: 0;
 }
 
@@ -941,26 +937,31 @@ Change padding of parent node if child node is hidden using .hidden class.
 }
 
 .konoLink {
-  font-family: "Poppins";
-  font-weight: 500;
-  border-radius: 0.3rem;
-  width: 100%;
-  background-color: #6d83f2;
+  border-radius: 20px;
+  width: 35px;
+  border: 1px solid #f3f6ff;
   text-align: center;
-  padding: 8px 0;
-  margin-bottom: 1rem;
-  & > a {
-    text-decoration: none;
-    color: #3f4156;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-out;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #6d83f2;
+    background-color: #6d83f2;
+    width: 7rem;
+    border-radius: 0.5rem;
   }
 }
 
-.konoLink:hover {
-  cursor: pointer;
+.konoLink img {
+  width: 11px;
+  height: 11px;
+  margin-bottom: 4px;
 }
 
 .konoContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
