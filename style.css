@@ -788,59 +788,7 @@ Change padding of parent node if child node is hidden using .hidden class.
   padding: 10rem 25rem 10rem 25rem;
 }
 
-.block {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  height: 20rem;
-  background: #2c2c2c;
-  border-radius: 1rem;
-}
-
-.block:before,
-.block:after {
-  content: "";
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(
-    45deg,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000
-  );
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 20s linear infinite;
-  border-radius: 1rem;
-}
-
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.block:after {
-  	filter: blur(50px);
-}
-
-.konoCover {
+.konoItem {
   background-color: #2c2c2c;
   border-radius: 1rem;
   overflow: hidden;
@@ -848,7 +796,57 @@ Change padding of parent node if child node is hidden using .hidden class.
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
 }
 
-.konoCover img {
+.konoItem img {
   border-radius: 0.5rem;
   padding-left: 0;
+}
+
+.konoTitle {
+  margin-top: 1rem;
+  color: antiquewhite;
+  text-align: center;
+  font-family: 'Yu Mincho';
+}
+
+.konoTitle span {
+  font-family: 'Poppins';
+}
+
+.titleJP {
+  font-family: 'Yu Mincho';
+  font-size: 1.3rem;
+}
+
+.konoDescription {
+  font-family: 'Yu Mincho';
+  font-size: 0.91rem;
+  margin-top: 1rem;
+  color: antiquewhite;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+.konoLink {
+  font-family: 'Poppins';
+  font-weight: 500;
+  border-radius: 0.3rem;
+  width: 100%;
+  background-color: #6d83f2;
+  text-align: center;
+  padding: 8px 0;
+  margin-bottom: 1rem;
+  & > a {
+    text-decoration: none;
+    color: #3f4156;
+  }
+}
+
+.konoLink:hover {
+  cursor: pointer;
+}
+
+.konoContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
