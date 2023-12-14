@@ -66,6 +66,14 @@ body {
   border-bottom: none;
 }
 
+@media screen and (min-width: 1551px) and (max-width: 1750px) {
+  .konoDescription {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+}
+
 @media screen and (max-width: 1550px) {
   .section,
   .konorano {
@@ -89,6 +97,14 @@ body {
 
   .circle_lists .c_list .lavel_name {
     font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 1254px) {
+  .konoDescription {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -930,9 +946,6 @@ Change padding of parent node if child node is hidden using .hidden class.
   padding-right: 4rem;
   padding-left: 4rem;
   text-align: center;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -959,9 +972,19 @@ Change padding of parent node if child node is hidden using .hidden class.
   margin-bottom: 4px;
 }
 
+#kono20241 img {
+  width: 16px;
+  height: 16px;
+}
+
 .konoContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#kono20241,
+#kono20242 {
+  display: inline-block;
 }
