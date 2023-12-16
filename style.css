@@ -988,3 +988,32 @@ Change padding of parent node if child node is hidden using .hidden class.
 #kono20242 {
   display: inline-block;
 }
+
+
+/* Search Bar------------------------------------------- */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lexend';
+  margin-bottom: 2.5rem;
+}
+
+#searchInput {
+  background-image: url('assets/search.png');
+  background-size: 1.2rem;
+  background-position: 13px center;
+  background-repeat: no-repeat;
+  caret-color: aliceblue;
+  font-weight: 300;
+  color: bisque;
+  width: 80%;
+  font-size: 16px;
+  padding: 12px 20px 12px 45px;
+  border: none;
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.32);
+  &:focus {
+    outline: none;
+  }
+}
