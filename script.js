@@ -205,6 +205,10 @@ function searchFunction() {
         } else items[i].parentElement.classList.remove('d-none');
     }
 
+    if (Array.from(items).every(item => item.parentElement.classList.contains('d-none')))
+        document.getElementById('failedInput').style.display = 'block';
+    else document.getElementById('failedInput').style.display = 'none';
+
     if (input != '')
         document.getElementsByClassName('paging')[0].style.display = "none";
     else {

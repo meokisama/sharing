@@ -997,7 +997,9 @@ Change padding of parent node if child node is hidden using .hidden class.
 /* Search Bar------------------------------------------- */
 .searchContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: 'Lexend';
   margin-bottom: 2.5rem;
 }
@@ -1020,4 +1022,12 @@ Change padding of parent node if child node is hidden using .hidden class.
   &:focus {
     outline: none;
   }
+}
+
+#failedInput {
+  color: rgba(250, 200, 130, 0.6);
+  width: 60%;
+  text-align: center;
+  padding: 15rem 0;
+  display: none;
 }
