@@ -137,6 +137,10 @@ body {
     padding-right: 2rem !important;
   }
 
+  #searchInput {
+    width: 80% !important;
+  }
+
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
   }
@@ -1006,7 +1010,7 @@ Change padding of parent node if child node is hidden using .hidden class.
   caret-color: aliceblue;
   font-weight: 300;
   color: bisque;
-  width: 80%;
+  width: 60%;
   font-size: 16px;
   padding: 12px 20px 12px 45px;
   border: none;

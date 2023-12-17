@@ -199,6 +199,12 @@ function searchFunction() {
     const input = document.getElementById('searchInput').value.toUpperCase();
     const items = document.getElementsByClassName('item');
 
+    for (let i = 0; i < items.length; i++) {
+        if (!items[i].getElementsByTagName('p')[0].innerHTML.trim().toUpperCase().includes(input)) {
+            items[i].parentElement.classList.add('d-none');
+        } else items[i].parentElement.classList.remove('d-none');
+    }
+
     if (input != '')
         document.getElementsByClassName('paging')[0].style.display = "none";
     else {
@@ -207,11 +213,5 @@ function searchFunction() {
             else items[i].parentElement.classList.add('d-none');
         }
         document.getElementsByClassName('paging')[0].style.display = "flex";
-    }
-
-    for (let i = 0; i < items.length; i++) {
-        if (!items[i].getElementsByTagName('p')[0].innerHTML.trim().toUpperCase().includes(input)) {
-            items[i].parentElement.classList.add('d-none');
-        } else items[i].parentElement.classList.remove('d-none');
     }
 }
