@@ -126,6 +126,10 @@ document.getElementById("9784041138472").addEventListener("click", function () {
     window.open("content/9784041138472/", '_blank');
 });
 
+document.getElementById("9784086315357").addEventListener("click", function () {
+    window.open("content/9784086315357/", '_blank');
+});
+
 
 //Pagination
 document.addEventListener('DOMContentLoaded', function () {
