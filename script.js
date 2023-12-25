@@ -131,6 +131,22 @@ document.getElementById("9784086315357").addEventListener("click", function () {
 });
 
 
+//Sidebar
+let sideClick = document.querySelectorAll('.sideImgContainer');
+sideClick[0].addEventListener('click', () => {
+    window.open("https://facebook.com/TheMeoki", '_blank')
+})
+sideClick[1].addEventListener('click', () => {
+    window.open("https://x.com/meokiiii", '_blank')
+})
+sideClick[2].addEventListener('click', () => {
+    window.open("https://github.com/meokisama", '_blank')
+})
+sideClick[3].addEventListener('click', () => {
+    window.open("https://instagram.com/meokisama", '_blank')
+})
+
+
 //Pagination
 document.addEventListener('DOMContentLoaded', function () {
     const itemsPerPage = 24;
