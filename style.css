@@ -141,6 +141,10 @@ body {
     width: 80% !important;
   }
 
+  .sidePanel {
+    display: none !important;
+  }
+
   .circle_lists {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
   }
@@ -1031,6 +1035,7 @@ Change padding of parent node if child node is hidden using .hidden class.
   display: none;
 }
 
+/* Sidepanel------------------------------------------- */
 .sidePanel {
   position: fixed;
   bottom: 1%;
