@@ -9,134 +9,15 @@ window.onload = function () {
 }
 
 // URL settings for each item
-document.getElementById("9784798633336").addEventListener("click", function () {
-    window.open("content/9784798633336/", '_blank');
+const items = Array.from(document.getElementsByClassName('item')).slice(0);
+items.forEach((item) => {
+    item.addEventListener("click", function () {
+        let url = "content/" + item.id + "/";
+        window.open(url, '_blank');
+    });
 });
 
 
-document.getElementById("9784798633350").addEventListener("click", function () {
-    window.open("content/9784798633350/", '_blank');
-});
-
-
-document.getElementById("9784046821096").addEventListener("click", function () {
-    window.open("content/9784046821096/", '_blank');
-});
-
-
-document.getElementById("9784046826398").addEventListener("click", function () {
-    window.open("content/9784046826398/", '_blank');
-});
-
-
-document.getElementById("9784041140628").addEventListener("click", function () {
-    window.open("content/9784041140628/", '_blank');
-});
-
-
-document.getElementById("9784049150148").addEventListener("click", function () {
-    window.open("content/9784049150148/", '_blank');
-});
-
-
-document.getElementById("9784046827746").addEventListener("click", function () {
-    window.open("content/9784046827746/", '_blank');
-});
-
-
-document.getElementById("9784867164518").addEventListener("click", function () {
-    window.open("content/9784867164518/", '_blank');
-});
-
-
-document.getElementById("9784046830760").addEventListener("click", function () {
-    window.open("content/9784046830760/", '_blank');
-});
-
-
-document.getElementById("9784094531602").addEventListener("click", function () {
-    window.open("content/9784094531602/", '_blank');
-});
-
-document.getElementById("9784575753271").addEventListener("click", function () {
-    window.open("content/9784575753271/", '_blank');
-});
-
-document.getElementById("9784086315289").addEventListener("click", function () {
-    window.open("content/9784086315289/", '_blank');
-});
-
-document.getElementById("9784798633589").addEventListener("click", function () {
-    window.open("content/9784798633589/", '_blank');
-});
-
-document.getElementById("9784086315258").addEventListener("click", function () {
-    window.open("content/9784086315258/", '_blank');
-});
-
-document.getElementById("9784049147490").addEventListener("click", function () {
-    window.open("content/9784049147490/", '_blank');
-});
-
-document.getElementById("9784824005007").addEventListener("click", function () {
-    window.open("content/9784824005007/", '_blank');
-});
-
-document.getElementById("9784049151299").addEventListener("click", function () {
-    window.open("content/9784049151299/", '_blank');
-});
-
-document.getElementById("9784815618759").addEventListener("click", function () {
-    window.open("content/9784815618759/", '_blank');
-});
-
-document.getElementById("9784094531442").addEventListener("click", function () {
-    window.open("content/9784094531442/", '_blank');
-});
-
-document.getElementById("9784040746098").addEventListener("click", function () {
-    window.open("content/9784040746098/", '_blank');
-});
-
-document.getElementById("9784046821102").addEventListener("click", function () {
-    window.open("content/9784046821102/", '_blank');
-});
-
-document.getElementById("9784815614584").addEventListener("click", function () {
-    window.open("content/9784815614584/", '_blank');
-});
-
-document.getElementById("9784040749495").addEventListener("click", function () {
-    window.open("content/9784040749495/", '_blank');
-});
-
-document.getElementById("9784041130872").addEventListener("click", function () {
-    window.open("content/9784041130872/", '_blank');
-});
-
-document.getElementById("9784049151282").addEventListener("click", function () {
-    window.open("content/9784049151282/", '_blank');
-});
-
-document.getElementById("9784049148183").addEventListener("click", function () {
-    window.open("content/9784049148183/", '_blank');
-});
-
-document.getElementById("9784041138472").addEventListener("click", function () {
-    window.open("content/9784041138472/", '_blank');
-});
-
-document.getElementById("9784086315357").addEventListener("click", function () {
-    window.open("content/9784086315357/", '_blank');
-});
-
-document.getElementById("9784086315326").addEventListener("click", function () {
-    window.open("content/9784086315326/", '_blank');
-});
-
-document.getElementById("9784041141847").addEventListener("click", function () {
-    window.open("content/9784041141847/", '_blank');
-});
 
 
 //Sidebar
