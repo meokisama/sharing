@@ -130,6 +130,14 @@ document.getElementById("9784086315357").addEventListener("click", function () {
     window.open("content/9784086315357/", '_blank');
 });
 
+document.getElementById("9784086315326").addEventListener("click", function () {
+    window.open("content/9784086315326/", '_blank');
+});
+
+document.getElementById("9784041141847").addEventListener("click", function () {
+    window.open("content/9784041141847/", '_blank');
+});
+
 
 //Sidebar
 let sideClick = document.querySelectorAll('.sideImgContainer');
