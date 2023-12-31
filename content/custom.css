@@ -109,3 +109,8 @@ svg {
 .main {
   height: auto !important;
 }
+
+/* Fix issue for chapter images */
+.main1 p:first-child img {
+  width: auto !important;
+}
