@@ -18,6 +18,6 @@ def insert_to_file(directory, insert_string):
 
 # Thay đổi đường dẫn của thư mục chính
 main_directory = '../content'
-insert_string = '@import url(../custom.css)'
+insert_string = '@import url(../custom.css);'
 
 insert_to_file(main_directory, insert_string)
