@@ -111,6 +111,9 @@ svg {
 }
 
 /* Fix issue for chapter images */
-.main1 p:first-child img {
+.main1 p:first-child img:not(.fit1) {
+  width: auto !important;
+}
+.main1 h1:first-child img:not(.fit1) {
   width: auto !important;
 }
