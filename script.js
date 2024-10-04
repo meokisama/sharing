@@ -95,14 +95,6 @@ window.addEventListener('resize', () => {
     coverResize();
 });
 
-var coverResize = () => {
-    var sampleHeight = document.getElementById('sampleHeight').offsetHeight;
-    var coversList = document.querySelectorAll('.img-holder img:not(#sampleHeight)');
-    for (let i = 0; i < coversList.length; i++) {
-        coversList[i].style.height = sampleHeight + 'px';
-    }
-}
-
 // Search Function
 function searchFunction() {
     const input = document.getElementById('searchInput').value.toUpperCase();

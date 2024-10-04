@@ -23,7 +23,6 @@ body {
   transition: all 0.3s ease-out;
   transform: translateZ(0);
   overflow: hidden;
-  height: auto;
 }
 
 .item:hover {
@@ -34,7 +33,7 @@ body {
 
 .item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -165,6 +164,11 @@ body {
     height: 3.6rem;
   }
 
+  .img-holder {
+    overflow: hidden;
+    height: 300px !important;
+  }
+
   .edge {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
@@ -237,6 +241,11 @@ body {
 
   .item span {
     font-size: 0.5rem;
+  }
+
+  .img-holder {
+    overflow: hidden;
+    height: 200px !important;
   }
 
   .edge {
@@ -320,6 +329,11 @@ body {
 
   .item span {
     font-size: 0.4rem;
+  }
+
+  .img-holder {
+    overflow: hidden;
+    height: 200px;
   }
 
   .edge {
@@ -484,6 +498,7 @@ body {
 
 .img-holder {
   overflow: hidden;
+  height: 400px;
 }
 
 .pad {
@@ -1076,7 +1091,7 @@ Change padding of parent node if child node is hidden using .hidden class.
 }
 
 .sidePanel .sideImgContainer span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: aliceblue;
   font-size: 0.9rem;
   display: none;
